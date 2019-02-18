@@ -1,0 +1,28 @@
+body * {
+  font-family: Palatino;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+ul * {
+  margin: 1px;
+  padding: 8px;
+  list-style-type: none;
+}
+
+body button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+body h1 {
+  border-style: solid;
+  border-top: 2px;
+  border-left: 2px;
+  border-right: 2px;
+
+}

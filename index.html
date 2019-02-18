@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Endangered Animals</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="animal" class="primary">Animal</label>
+          <input type="text" id="animal" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="species" class="primary">Species</label>
+          <input type="text" id="species" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="continent" class="primary">Continent</label>
+          <select id="continent">
+            <option value="" disabled selected></option>
+            <option value="Africa">Africa</option>
+            <option value="N. America">N. America</option>
+            <option value="S. America">S. America</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Asia">Asia</option>
+            <option value="Australia">Australia</option>
+            <option value="Europe">Europe</option>
+          </select>
+        </div>
+
+        <p>Would you like to be updated about this animal's inevitable spiral towards oblivion?</p>
+         <div class="form-item">
+           <label for="contactMe" class="primary"></label>
+           <input type="radio" id="contactMe"
+              name="contact" value="Yes, email me about this sad animal.">
+           <label for="contactChoice1">Yes</label>
+
+           <input type="radio" id="contactMe"
+              name="contact" value="No, I don't give a shit. Everything decays.">
+           <label for="contactChoice2">No</label>
+
+       </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+        <button type="button" name="button" id="delete-btn">Delete All</button>
+    <h1>Animals</h1>
+    <ul id="animals"></ul>
+  </body>
+</html>
